@@ -8,6 +8,8 @@ import com.example.springsecuritydemo.repository.UserRepository;
 import com.example.springsecuritydemo.security.JWTConfigurer;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
+//import org.springframework.boot.autoconfigure.security.oauth2.client.EnableOAuth2Sso;
+//import org.springframework.boot.autoconfigure.security.oauth2.resource.PrincipalExtractor;
 import org.springframework.boot.autoconfigure.security.oauth2.client.EnableOAuth2Sso;
 import org.springframework.boot.autoconfigure.security.oauth2.resource.PrincipalExtractor;
 import org.springframework.context.annotation.Bean;
@@ -75,8 +77,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 //                .authorizeRequests()
 //                .antMatchers("/").permitAll()
 //                .antMatchers("/api/v1/auth/login").permitAll()
-//                .anyRequest()
-//                .authenticated()
+//                .anyRequest().authenticated()
 //                .and()
 //                .apply(jwtConfigurer);
 //    }
